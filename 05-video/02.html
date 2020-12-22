@@ -42,6 +42,7 @@
         
         for (let i = 0; i < messages.length; i++) {
           if (videoElem.currentTime > messages[i].time) {
+            // 낙서 조짐 ㅋㅋ
             ctx.fillText(messages[i].message, messages[i].x, messages[i].y);
           }
         }

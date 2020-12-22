@@ -24,11 +24,14 @@
       const canvas = document.querySelector('.canvas');
       const context = canvas.getContext('2d');
       context.beginPath();
+      // x(중심), y(중심), 반지름, 시작각도, 끝각도, 시계방향(false)or반시계방향(true)
       context.arc(300, 200, 50, 0, 라디안(360), false);
       context.stroke();
       context.beginPath();
       context.arc(500, 100, 20, 0, 라디안(360), false);
       context.stroke();
+
+      // 베지에 곡선도 그려보자!
     </script>
   </body>
 </html>

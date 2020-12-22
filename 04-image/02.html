@@ -69,6 +69,7 @@
         switch (brush) {
           case 'color':
             context.beginPath();
+            // 캔버스 기준으로 위치를 잡기 위해 clientY가 아니라 layerY를 사용해야 한다.
             context.arc(이벤트.layerX, 이벤트.layerY, 10, 0, Math.PI*2, false);
             context.fill();
             break;

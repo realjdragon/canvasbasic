@@ -31,6 +31,7 @@
       }
 
       timerId = setInterval(draw, 500);
+      // requestAnimationFrame이 성능상 더 이점이 있다고는 하네.
 
       canvas.addEventListener('click', () => {
         clearInterval(timerId);
